@@ -1,0 +1,9 @@
+$mobilMi: 100px !default;
+$mobilMa: 699px !default;
+$tabletMin: 700px !default;
+$tabletMax: 979px !default;
+$desktopMin: 980px !default;
+$desktopMax: 1920px !default;
+
+$mobilMax: "screen and (max-width: #{$mobilMa})";
+$tabletMin-Max: "screen and (max-width: #{$tabletMin})and (max-width: #{$tabletMax})";

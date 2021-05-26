@@ -1,0 +1,74 @@
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #333;
+  width: 400px;
+  margin: auto;
+}
+
+fieldset {
+  margin-top: 20px;
+  border: 1px solid grey;
+  background-color: #f3f3f3;
+  border-radius: 7px;
+}
+
+legend {
+  color: chocolate;
+  font-weight: bold;
+}
+
+#contactForm label {
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+  font-weight: bold;
+}
+
+#inscription label {
+  width: 25%;
+  display: inline-block;
+  text-align: right;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  background-color: khaki;
+  padding: 5px;
+  border-radius: 7px;
+  outline: none;
+  &:hover {
+    border: 2px solid chocolate;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: coral;
+  border: 1px solid crimson;
+  padding: 5px;
+  border-radius: 7px;
+  color: maroon;
+  transition: 200ms;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 127, 80, 0.637);
+    border: 1px solid crimson;
+    padding: 5px;
+    border-radius: 7px;
+    color: maroon;
+    box-shadow: 0px 6px 10px rgba(255, 0, 0, 0.671);
+    transition: 200ms;
+  }
+}
+
+fieldset + p {
+  text-align: center;
+}
+
+textarea {
+  background-color: khaki;
+}

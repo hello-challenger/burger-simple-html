@@ -1,0 +1,98 @@
+@import './base/normalize';
+@import './layout/form';
+@import './layout/navigation';
+@import './utils/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Robot', Courier New, Courier, monospace;
+  background-color: #f3f3f3;
+}
+
+main img {
+  width: 100%;
+  z-index: -10;
+  margin: auto;
+}
+
+.iconTest {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconTest ul {
+  margin: 0;
+  padding: 0;
+}
+.iconTest ul {
+  list-style: none;
+}
+
+.bloc div {
+  display: inline-block;
+}
+
+footer {
+  background-color: rgb(48, 80, 112);
+  color: #f2f2f2;
+}
+
+@media #{$mobilMax} {
+  .burger,
+  .close {
+    color: chocolate;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .burger:hover,
+  .close:hover {
+    display: block;
+    cursor: pointer;
+    color: burlywood;
+    transition: 0.3s;
+  }
+
+  .close {
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #000;
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+    transition: 0.7s;
+    li {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      border-bottom: 1px solid burlywood;
+      padding: 10px;
+    }
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+
+@media #{$tabletMin-Max} {
+  body {
+    background-color: khaki;
+  }
+}

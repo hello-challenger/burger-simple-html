@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Generate
+Dart-sass/sass asset/scss:public/css
+
+# Compliation
+Dart-sass/sass asset/scss:public/css --watch
+
+# Dart executable and a snapshot of dart-sass --watch
+
+exec "$path/Dart-sass/sass" "$path/asset/scss:public/css --watch"
+

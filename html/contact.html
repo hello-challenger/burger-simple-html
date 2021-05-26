@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../node_modules/animate.css/source/animate.css">
+	<link rel="stylesheet" href="../public/css/style.css">
+	<link rel="stylesheet" href="../public/media/fontawesome-free-5.15.3-web/css/all.min.css">
+	<script src="../js/main.js" defer></script>
+	<link rel="shortcut icon" type="image/x-icon" href="../Hex-Css-3.ico">
+	<title>Contact</title>
+</head>
+
+<body>
+
+	<div id="grill" class="contenair">
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="burger"><i class="fas fa-bars"></i></label>
+
+			<ul class="menu">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#" class="on">Contact us</a></li>
+				<label for="check" class="close"><i class="fas fa-times"></i></label>
+			</ul>
+		</nav>
+
+		<main>
+			<img src="../public/media/img/tasty-burger.jpg" alt="tableau avec algorithme">
+		</main>
+
+		<form action="" id="contactForm">
+			<!-- <fieldset disabled> -->
+			<fieldset>
+				<legend>Qui ête vous ?</legend>
+
+				<p>
+					<label for="prenom" id="prenom">Prénom :</label>
+					<input type="text" id="prenom" name="prenom" tabindex="1" placeholder="Prénom">
+				</p>
+				<p>
+					<label for="nom" id="Name">Nom :</label>
+					<input type="text" id="Name" name="nom" tabindex="2" placeholder="Nom">
+				</p>
+				<p>
+					<label for="age" id="age">Age :</label>
+					<input type="number" id="age" name="age" tabindex="3" placeholder="Age">
+				</p>
+				<p>
+					<label for="tel" id="tel">Tel :</label>
+					<input type="tel" id="tel" name="tel" tabindex="4" pattern="[0-9]{10}" placeholder="Téléphone">
+					*
+				</p>
+			</fieldset></br>
+			<fieldset>
+				<legend>Que voulez vous ?</legend>
+				<p><textarea></textarea></p>
+			</fieldset>
+			<p><input type="submit" tabindex="5" value="Valider ce formulaire"></p>
+		</form>
+
+
+		<footer>footer</footer>
+	</div>
+
+
+	<!--
+	<script src="js/app.js" defer></script>
+	-->
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="node_modules/animate.css/source/animate.css">
+	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="stylesheet" href="public/media/fontawesome-free-5.15.3-web/css/all.min.css">
+	<script src="js/main.js" defer></script>
+	<link rel="shortcut icon" type="image/x-icon" href="Hex-Css-3.ico">
+	<title>WebSite</title>
+</head>
+
+<body>
+
+	<div id="grill" class="contenair">
+		<nav>
+			<input type="checkbox" id="check">
+			<label for="check" class="burger"><i class="fas fa-bars"></i></label>
+
+			<ul class="menu">
+				<li><a href="#" class="on">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="/html/contact.html">Contact us</a></li>
+				<label for="check" class="close"><i class="fas fa-times"></i></label>
+			</ul>
+		</nav>
+
+
+		<main>
+			<img src="public/media/img/tasty-burger.jpg" alt="tableau avec algorithme">
+		</main>
+
+		<!--Barre Search no icon-->
+		<form id="search" action="">
+			<fieldset>
+				<legend>Search</legend>
+				<label for="chercher"></label>
+				<input type="text" id="chercher" list="burger">
+				<!-- Auto Suggestion Search-->
+				<datalist id=burger>
+					<option value="Maxi-burger"></option>
+					<option value="Royal"></option>
+					<option value="Bacon"></option>
+					<option value="Vegeterian"></option>
+					<option value="chicken"></option>
+				</datalist>
+				<input type="submit" value="Chercher">
+			</fieldset>
+		</form></br>
+
+		<form action="">
+			<!-- Auto Suggestion Color rgb 256 bits-->
+			<label for="couleur">RGB Color</label>
+			<input value="#0000ff" type="color" id="couleur" />
+		</form></br>
+
+		<div class="iconTest">
+			<div class="bloc">
+				<ul>
+					<li><i class="fas fa-ad"></i></li>
+					<p>Mon texte</p>
+				</ul>
+			</div>
+			<div class="bloc">
+				<ul>
+					<li><i class="fas fa-ad"></i></li>
+					<p>Mon texte</p>
+				</ul>
+			</div>
+			<div class="bloc">
+				<ul>
+					<li><i class="fas fa-ad"></i></li>
+					<p>Mon texte</p>
+				</ul>
+			</div>
+
+
+			<div></div>
+		</div>
+
+
+		<article>Content</article>
+		<footer>footer</footer>
+	</div>
+
+
+	<!--
+	<script src="js/app.js" defer></script>
+	-->
+</body>
+
+
+</html>
